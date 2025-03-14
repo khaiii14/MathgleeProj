@@ -44,4 +44,16 @@ public class NPC : MonoBehaviour
             waypointIndex = 0;
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Timer timer = FindObjectOfType<Timer>();
+            if (timer != null)
+            {
+                timer.ReduceTime(5F);
+            }
+        }
+    }
 }
