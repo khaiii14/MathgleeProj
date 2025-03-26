@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main_Menu.unity
     guid: ac7e972a55178d2479c8eb3ae57673df
+  - enabled: 1
+    path: Assets/Scenes/Vid_Piktogram.unity
+    guid: 7232c608c3c7fb3428afe5354aeb50bc
   m_configObjects: {}

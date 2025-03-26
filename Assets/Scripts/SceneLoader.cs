@@ -12,12 +12,17 @@ public class SceneLoader : MonoBehaviour
 
     public void ExitGame()
     {
-        // Jika di editor, beri log untuk menandakan exit dipanggil
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
         #else
-        // Jika di Android atau platform lain, keluar dari aplikasi
         Application.Quit();
         #endif
     }
+
+    // Fungsi untuk menampilkan/menyembunyikan panel
+    public void TogglePanel(GameObject panel)
+    {
+        panel.SetActive(!panel.activeSelf);
+    }
 }
+

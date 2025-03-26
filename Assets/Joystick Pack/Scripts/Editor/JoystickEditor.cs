@@ -37,7 +37,7 @@ public class JoystickEditor : Editor
 
         serializedObject.ApplyModifiedProperties();
 
-        if(handle != null)
+        if (handle != null)
         {
             RectTransform handleRect = (RectTransform)handle.objectReferenceValue;
             handleRect.anchorMax = center;
@@ -58,7 +58,7 @@ public class JoystickEditor : Editor
 
     protected virtual void DrawComponents()
     {
-        EditorGUILayout.ObjectField(background, new GUIContent("Background", "The background's RectTransform component."));
-        EditorGUILayout.ObjectField(handle, new GUIContent("Handle", "The handle's RectTransform component."));
+        EditorGUILayout.PropertyField(background, new GUIContent("Background", "The background's RectTransform component."));
+        EditorGUILayout.PropertyField(handle, new GUIContent("Handle", "The handle's RectTransform component."));
     }
 }

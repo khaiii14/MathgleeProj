@@ -344,7 +344,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 326.21198, y: 151.27182}
-  m_SizeDelta: {x: 425.76807, y: 79.83148}
+  m_SizeDelta: {x: 383.7963, y: 165.06}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &387294054
 MonoBehaviour:
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dbfbbe979f578e94b8deae98037d4ada, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 718d43c6dce02dd4e9706910be4ca151, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -782,7 +782,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1843162168}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233319261}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu_Materi
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1843162168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,7 +935,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0e14bbb7a26fc144ca87bfe19e3a13a8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2bdae47c122449a46aabe87b106df53c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
