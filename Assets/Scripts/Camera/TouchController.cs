@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TouchController : MonoBehaviour
 {
-    public FixedTouchField _FixedTouchField;
-    public CameraLook _CameraLook;
+    public FixedTouchField fixedTouchField;
+    public CameraLook cameraLook;
     void Start()
     {
         
@@ -14,6 +14,6 @@ public class TouchController : MonoBehaviour
     
     void Update()
     {
-        _CameraLook.LockAxis = _FixedTouchField.TouchDist;
+        cameraLook.LockAxis = fixedTouchField.TouchDist;
     }
 }
